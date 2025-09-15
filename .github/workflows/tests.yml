@@ -79,7 +79,7 @@ jobs:
       - name: Test fonction car
         run: |
           last_directory=$(basename ${{ runner.workspace }})
-          git clone
+          git clone https://github.com/${{ github.repository }}.git
           cd ./$last_directory
           mkdir build
           cd build
